@@ -25,6 +25,7 @@ router.post("/addtiedupcompanies", protect, upload.single('priceChart'), addTied
 router.post("/add-tied-up", protect, addTiedUpCompany);
 router.get("/gettiedupcompanies", protect, getTiedUpCompanies);
 router.get("/gettemporarytransporters", protect, getTemporaryTransporters);
+router.get("/temporary", protect, getTemporaryTransporters);
 router.get("/gettransporter", getTransporters);
 router.get("/getalltransporter", getAllTransporters);
 router.post("/savepackinglist", protect, savePckingList);
